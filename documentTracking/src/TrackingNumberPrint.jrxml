@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c896658c-9aee-4a2e-9db2-da88eaabb7e4">
+	<property name="ireport.zoom" value="1.7715610000000017"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+*
+FROM
+     documents]]>
+	</queryString>
+	<field name="tracking_data" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="18" y="10" width="52" height="40" uuid="96ec81f0-412f-4f38-9aa4-0de6a4860d85"/>
+				<imageExpression><![CDATA["C:\\Users\\Admin\\Documents\\NetBeansProjects\\documentTracking\\src\\document_tracking_system\\images\\log.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="488" y="10" width="55" height="47" uuid="bbe184f6-d2cd-4e91-aacb-644daec073ac"/>
+				<imageExpression><![CDATA["C:\\Users\\Admin\\Documents\\NetBeansProjects\\documentTracking\\src\\document_tracking_system\\images\\LOGOSSSS.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="87" y="10" width="376" height="20" uuid="0143f306-15fe-499b-b3d8-f1e4ce0b3fa8"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Davao Oriental State College of Science and technology]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="37" width="268" height="20" uuid="1b92fba7-5282-447f-a4f0-99a07cea83e5"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Phase-8 Guang-guang Dahican City of Mati]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="78" width="555" height="1" forecolor="#999999" uuid="c74a9cb0-97e4-4e2a-a642-1ca685b76eb5"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="35" uuid="114d131c-1a82-4b14-9924-275f0d81894f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tracking_data}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
